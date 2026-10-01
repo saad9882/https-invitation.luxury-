@@ -1,0 +1,74 @@
+[
+  {
+    "fullName": "Amara & Kevin",
+    "email": "amara@example.com",
+    "rating": 5,
+    "title": "Absolute Perfection!",
+    "experience": "We used the Teatro template and our guests loved the theatrical music and details. Best decision ever!",
+    "photoUrl": null,
+    "subscribed": true,
+    "verified": true,
+    "createdAt": "2026-07-12T20:41:39.592Z",
+    "_id": "s36nfya"
+  },
+  {
+    "_id": "seed-1",
+    "title": "Amazing experience",
+    "experience": "We couldn't have asked for a better way to invite our loved ones. The animations are incredibly smooth and the setup was completely seamless.",
+    "fullName": "CLARA & MARK",
+    "rating": 5,
+    "email": "clara.mark@example.com",
+    "subscribed": true,
+    "createdAt": "2026-07-12T20:00:00.000Z"
+  },
+  {
+    "_id": "seed-2",
+    "title": "Amazing, Easy, Unique Experience",
+    "experience": "Our guests were blown away by how beautiful the digital invitation was! Having the maps, RSVP, and music all in one place made it so convenient.",
+    "fullName": "JOAO & LUIS",
+    "rating": 5,
+    "email": "joao.luis@example.com",
+    "subscribed": true,
+    "createdAt": "2026-07-12T20:05:00.000Z"
+  },
+  {
+    "_id": "seed-3",
+    "title": "Absolutely beautiful x",
+    "experience": "The customization options allowed us to match our theme perfectly. The support team was incredibly helpful and quick to respond to our questions.",
+    "fullName": "EMILY & JAMES",
+    "rating": 5,
+    "email": "emily.james@example.com",
+    "subscribed": true,
+    "createdAt": "2026-07-12T20:10:00.000Z"
+  },
+  {
+    "_id": "seed-4",
+    "title": "A masterpiece of digital design",
+    "experience": "Every single page transitions with a luxury feel that matches the competitor's premium look. The RSVP dashboard is incredibly detailed and useful.",
+    "fullName": "SOPHIE & ANTOINE",
+    "rating": 5,
+    "email": "sophie.antoine@example.com",
+    "subscribed": true,
+    "createdAt": "2026-07-12T20:15:00.000Z"
+  },
+  {
+    "_id": "seed-5",
+    "title": "So simple to personalize",
+    "experience": "We created ours in less than an hour! It is so easy to share via WhatsApp and the RSVP updates are instant. Highly recommend this to everyone.",
+    "fullName": "MARIA & PAOLO",
+    "rating": 5,
+    "email": "maria.paolo@example.com",
+    "subscribed": true,
+    "createdAt": "2026-07-12T20:20:00.000Z"
+  },
+  {
+    "_id": "seed-6",
+    "title": "Guests were completely wowed",
+    "experience": "We received so many messages praising the elegant layout. It sets a luxurious tone for the wedding right from the very first link shared.",
+    "fullName": "HANNAH & GARRET",
+    "rating": 5,
+    "email": "hannah.garret@example.com",
+    "subscribed": true,
+    "createdAt": "2026-07-12T20:25:00.000Z"
+  }
+]

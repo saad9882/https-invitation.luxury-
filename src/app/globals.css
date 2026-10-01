@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-serif: var(--font-accent);
+  }
+  body {
+    background-color: #FBF9F6;
+    color: #2A2726;
+    font-family: var(--font-sans), sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6,
+  .font-serif {
+    font-family: var(--font-serif), serif !important;
+  }
+
+  button, input, select, textarea {
+    font-family: var(--font-sans), sans-serif !important;
+  }
+}
+
+/* Hide scrollbar utility */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

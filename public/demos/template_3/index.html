@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elisa &amp; Jhon — We're Getting Married</title>
+    <meta name="description" content="You are invited to celebrate the wedding of Elisa &amp; Jhon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Great+Vibes&family=Pinyon+Script&family=Playfair+Display:ital@1&family=Work+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --parchment: #f1e9da;
+            --parchment-deep: #e8dcc6;
+            --ink: #4c5238;
+            --ink-soft: rgba(76, 82, 56, 0.75);
+            --ink-faint: rgba(76, 82, 56, 0.45);
+            --wine: #6f7650;
+            --wine-deep: #555c3c;
+            --olive: #6f7650;
+            --brass: #a4813f;
+            --white: #fffdf8;
+            --line: rgba(78, 83, 56, 0.2);
+            --maxw: 660px;
+            --display: "Cinzel", Georgia, serif;
+            --script: "Playfair Display", Georgia, serif;
+            --calligraphy: "Great Vibes", cursive;
+            --sans: "Work Sans", -apple-system, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: var(--parchment);
+            color: var(--ink);
+            font-family: var(--sans);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+        ::selection {
+            background: var(--wine);
+            color: var(--white);
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--brass);
+            outline-offset: 3px;
+        }
+
+        .wrap {
+            max-width: var(--maxw);
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: var(--calligraphy), cursive;
+            font-weight: 400;
+            margin: 0;
+            letter-spacing: normal;
+            text-transform: none !important;
+        }
+
+        .script {
+            font-family: var(--script);
+            font-style: italic;
+            font-weight: 400;
+            line-height: 1.25;
+        }
+
+        .eyebrow {
+            font-size: 12px;
+            letter-spacing: .32em;
+            text-transform: uppercase;
+            color: var(--ink-soft);
+        }
+
+        section {
+            position: relative;
+            padding: 96px 0;
+        }
+
+        section+section {
+            border-top: 1px solid var(--line);
+        }
+
+        .section-title {
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 8px;
+            color: var(--wine-deep);
+        }
+
+        .section-sub {
+            text-align: center;
+            font-size: 12px;
+            letter-spacing: .24em;
+            text-transform: uppercase;
+            color: var(--ink-soft);
+            margin-bottom: 44px;
+        }
+
+        .branch-divider {
+            display: flex;
+            justify-content: center;
+            margin: 0 0 30px;
+        }
+
+        .branch-divider svg {
+            width: 120px;
+            height: auto;
+            color: var(--olive);
+        }
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 48vh;
+            overflow: hidden;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(241, 233, 218, 0.10);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 0 24px;
+            color: var(--olive);
+            text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9), 0 0 15px rgba(255, 255, 255, 0.8);
+        }
+
+        .hero-content .eyebrow {
+            color: var(--olive);
+            margin-bottom: 16px;
+            font-weight: 500;
+            letter-spacing: .35em;
+            font-size: 13px;
+        }
+
+        .hero-content h1 {
+            font-family: var(--calligraphy), var(--script);
+            font-size: clamp(54px, 12vw, 92px);
+            line-height: 1.1;
+            margin-bottom: 14px;
+            color: var(--olive);
+            font-weight: 400;
+        }
+
+        .hero-content .hdate {
+            font-size: 14px;
+            letter-spacing: .3em;
+            text-transform: uppercase;
+            color: var(--olive);
+            font-weight: 500;
+        }
+
+        #countdown .section-title {
+            color: var(--olive);
+            font-size: clamp(36px, 8vw, 54px);
+            margin-bottom: 40px;
+        }
+
+        .countdown-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 480px;
+            margin: 0 auto 30px;
+        }
+
+        .pod {
+            text-align: center;
+            padding: 0;
+            border: none;
+            background: none;
+        }
+
+        .pod .num {
+            display: block;
+            font-family: var(--display);
+            font-size: clamp(32px, 7vw, 56px);
+            font-variant-numeric: tabular-nums;
+            color: var(--olive);
+            line-height: 1.1;
+        }
+
+        .pod .lbl {
+            display: block;
+            margin-top: 6px;
+            font-size: 10px;
+            letter-spacing: .24em;
+            text-transform: uppercase;
+            color: var(--brass);
+            font-weight: 500;
+        }
+
+        .lights-container {
+            display: flex;
+            justify-content: center;
+            margin: 40px auto -96px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .lights-img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+        }
+
+        /* Details Image Card Overlay Styles */
+        .details-card {
+            position: relative;
+            max-width: 500px;
+            min-height: 280px;
+            margin: 0 auto;
+            border-radius: 0;
+            overflow: hidden;
+            box-shadow: none;
+            border: none;
+            display: flex;
+        }
+
+        .details-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: none;
+            opacity: 1;
+        }
+
+        .details-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--wine);
+            text-align: center;
+            padding: 24px;
+            z-index: 2;
+            text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9), 0 0 15px rgba(255, 255, 255, 0.8);
+        }
+
+        .details-overlay .script {
+            font-size: clamp(28px, 6vw, 36px);
+            margin-bottom: 6px;
+            color: var(--wine);
+            margin-top: -10px;
+        }
+
+        .details-venue {
+            font-size: clamp(18px, 4.5vw, 24px);
+            letter-spacing: normal;
+            text-transform: none !important;
+            margin-bottom: 10px;
+            color: var(--wine);
+        }
+
+        .details-time {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            font-size: 13px;
+            color: var(--wine);
+            margin-bottom: 0;
+        }
+
+        .details-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 28px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            padding: 11px 18px;
+            background: var(--wine);
+            color: var(--white) !important;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all .2s ease;
+            border-radius: 30px;
+        }
+
+        .btn:hover {
+            background: var(--wine-deep);
+        }
+
+        .music-divider {
+            display: flex;
+            justify-content: center;
+            margin: 48px auto 0;
+        }
+
+        .music-img {
+            width: 100%;
+            max-width: 240px;
+            height: auto;
+        }
+
+        /* Splash Screen Styles */
+        .splash-screen {
+            position: fixed;
+            inset: 0;
+            width: 100vw;
+            height: 100vh;
+            background: url('assets/download.jfif') no-repeat center center;
+            background-size: cover;
+            z-index: 99999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            transition: opacity 0.8s ease, visibility 0.8s ease;
+        }
+
+        .splash-screen.fade-out {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        #splash-video {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            display: block;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        #splash-video.visible {
+            opacity: 1;
+        }
+
+        /* Centered Timeline Styling */
+        .timeline {
+            position: relative;
+            max-width: 500px;
+            margin: 40px auto 0;
+            text-align: center;
+            padding: 0;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1px;
+            background-color: var(--line);
+            z-index: 1;
+        }
+
+        .t-item {
+            position: relative;
+            padding: 30px 0;
+            z-index: 2;
+        }
+
+        .t-item::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 40px;
+            transform: translateX(-50%);
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--wine);
+            z-index: 4;
+        }
+
+        .t-item:first-child {
+            padding-top: 0;
+        }
+
+        .t-item:last-child {
+            padding-bottom: 0;
+        }
+
+        .t-time {
+            display: inline-block;
+            background: var(--parchment);
+            border: 1px solid var(--line);
+            padding: 4px 10px;
+            font-size: 11px;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--ink-faint);
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .t-cherub {
+            display: block;
+            width: 80px;
+            height: auto;
+            margin: 0 auto 16px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .t-item h3 {
+            font-size: clamp(18px, 5vw, 24px);
+            color: var(--ink);
+            margin: 0 auto 8px;
+            position: relative;
+            z-index: 3;
+            background: var(--parchment);
+            display: inline-block;
+            padding: 0 16px;
+        }
+
+        .t-item p {
+            font-size: 14px;
+            color: var(--ink-soft);
+            line-height: 1.6;
+            margin: 0;
+            position: relative;
+            z-index: 3;
+            background: var(--parchment);
+            display: inline-block;
+            padding: 0 8px;
+        }
+
+        .dresscode-wrap {
+            max-width: 420px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .dresscode-illustration {
+            width: 100%;
+            margin-bottom: -2.4rem;
+            position: relative;
+            z-index: 1;
+            opacity: .95;
+        }
+
+        .dresscode-card {
+            position: relative;
+            z-index: 0;
+            background: var(--white);
+            padding: 52px 32px 32px;
+            box-shadow: 0 6px 24px rgba(45, 39, 33, .08);
+        }
+
+        .dresscode-card h3 {
+            font-size: 22px;
+            color: var(--wine-deep);
+            margin-bottom: 12px;
+        }
+
+        .dresscode-card p {
+            font-size: 15px;
+            color: var(--ink-soft);
+            line-height: 1.7;
+            margin: 0 0 14px;
+        }
+
+        .dresscode-card .note {
+            font-style: italic;
+            font-size: 13px;
+            color: var(--ink-faint);
+            margin: 0;
+        }
+
+        .gifts-wrap {
+            max-width: 440px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .envelope-img {
+            width: 150px;
+            margin: 0 auto 30px;
+            opacity: .95;
+        }
+
+        .gifts-copy {
+            font-size: 15px;
+            color: var(--ink-soft);
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+
+        .accordion-item {
+            text-align: left;
+            border: 1px solid var(--line);
+            margin-bottom: 10px;
+            background: var(--white);
+        }
+
+        .accordion-q {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: none;
+            border: none;
+            padding: 16px 18px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--ink);
+        }
+
+        .accordion-q .tag {
+            font-size: 10px;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--brass);
+            border: 1px solid var(--brass);
+            padding: 2px 8px;
+            margin-left: 10px;
+        }
+
+        .accordion-q .chevron {
+            transition: transform .25s ease;
+            color: var(--wine);
+            flex-shrink: 0;
+        }
+
+        .accordion-item[data-open="true"] .chevron {
+            transform: rotate(180deg);
+        }
+
+        .accordion-a {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .3s ease;
+        }
+
+        .accordion-a p {
+            margin: 0;
+            padding: 0 18px 16px;
+            font-size: 14px;
+            color: var(--ink-soft);
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        .rsvp-deadline {
+            text-align: center;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--wine-deep);
+            margin: 12px auto 40px;
+        }
+
+        form.rsvp-form {
+            max-width: 440px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 38px 32px;
+            box-shadow: 0 6px 24px rgba(45, 39, 33, .08);
+        }
+
+        .field {
+            margin-bottom: 22px;
+        }
+
+        .field label {
+            display: block;
+            font-size: 12px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--ink);
+            margin-bottom: 8px;
+        }
+
+        .field input,
+        .field textarea {
+            width: 100%;
+            border: 1px solid var(--line);
+            background: var(--white);
+            font-family: var(--sans);
+            font-size: 15px;
+            color: var(--ink);
+            padding: 10px 12px;
+        }
+
+        .field textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .field input:focus,
+        .field textarea:focus {
+            outline: none;
+            border-color: var(--wine);
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .radio-option input {
+            width: 16px;
+            height: 16px;
+            accent-color: var(--wine);
+        }
+
+        .rsvp-submit {
+            width: 100%;
+            padding: 15px;
+            background: var(--wine);
+            color: var(--white);
+            border: none;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all .2s ease;
+            border-radius: 30px;
+        }
+
+        .rsvp-submit:hover {
+            background: var(--wine-deep);
+        }
+
+        #toast {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translate(-50%, 20px);
+            background: var(--ink);
+            color: var(--white);
+            padding: 14px 22px;
+            font-size: 14px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .3s ease, transform .3s ease;
+            z-index: 200;
+            text-align: center;
+            max-width: 90vw;
+        }
+
+        #toast.show {
+            opacity: 1;
+            transform: translate(-50%, 0);
+            pointer-events: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 80px 28px 40px;
+            background: var(--parchment-deep);
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer .script {
+            font-family: var(--calligraphy), var(--script);
+            font-size: clamp(38px, 8vw, 48px);
+            color: var(--wine-deep);
+            margin-bottom: 6px;
+            font-weight: 400;
+        }
+
+        footer .fdate {
+            font-size: 12px;
+            letter-spacing: .24em;
+            text-transform: uppercase;
+            color: var(--ink-soft);
+        }
+
+        .footer-ornament {
+            width: min(260px, 70vw);
+            margin: 34px auto 0;
+            opacity: .8;
+        }
+
+        footer .credit {
+            margin-top: 26px;
+            font-size: 11px;
+            color: var(--ink-faint);
+        }
+
+        @media (max-width:480px) {
+            .section-title {
+                font-size: 32px;
+            }
+
+            .countdown-grid {
+                gap: 10px;
+            }
+
+            .details-actions {
+                flex-direction: column;
+                align-items: stretch;
+                width: 100%;
+            }
+
+            /* Responsive Timeline styles */
+            .timeline::before {
+                left: 20px;
+                transform: none;
+            }
+            
+            .t-item {
+                text-align: left;
+                padding: 20px 0 20px 40px;
+            }
+            
+            .t-item::before {
+                left: 20px;
+                top: 24px;
+                transform: translateX(-50%);
+            }
+            
+            .t-item h3 {
+                display: block;
+                padding: 0;
+                margin: 0 0 6px 0;
+                font-size: 18px;
+                background: none !important;
+            }
+            
+            .t-item p {
+                display: block;
+                padding: 0;
+                margin: 0;
+                background: none !important;
+            }
+            
+            .t-time {
+                display: inline-block;
+                margin-bottom: 8px;
+                background: var(--parchment) !important;
+            }
+        }
+
+        @media (prefers-reduced-motion:reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            * {
+                transition-duration: .001ms !important;
+                animation-duration: .001ms !important;
+            }
+        }
+
+        /* Floating Music Button styling */
+        .music-toggle-btn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--brass);
+            color: var(--white);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(164, 129, 63, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            outline: none;
+        }
+
+        .music-toggle-btn:hover {
+            transform: scale(1.1);
+            background-color: var(--wine);
+            box-shadow: 0 6px 20px rgba(122, 46, 46, 0.5);
+        }
+
+        .music-toggle-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Pulse animation when music is playing */
+        .music-toggle-btn.playing {
+            animation: pulse-music 2s infinite;
+            background-color: var(--wine);
+            box-shadow: 0 4px 15px rgba(122, 46, 46, 0.4);
+        }
+
+        @keyframes pulse-music {
+            0% {
+                box-shadow: 0 0 0 0 rgba(122, 46, 46, 0.7), 0 4px 12px rgba(122, 46, 46, 0.3);
+            }
+            70% {
+                box-shadow: 0 0 0 12px rgba(122, 46, 46, 0), 0 4px 12px rgba(122, 46, 46, 0.3);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(122, 46, 46, 0), 0 4px 12px rgba(122, 46, 46, 0.3);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="splash-screen" class="splash-screen">
+        <video id="splash-video" src="assets/splash.mp4" poster="assets/download.jfif" playsinline preload="auto" muted></video>
+    </div>
+
+    <section class="hero">
+        <video class="hero-video" autoplay loop muted playsinline>
+            <source src="assets/background.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <p class="eyebrow">We are getting married</p>
+            <h1>Elisa &amp; Jhon</h1>
+            <p class="hdate">September 18, 2027</p>
+        </div>
+    </section>
+
+    <section id="countdown">
+        <div class="wrap">
+            <h2 class="section-title script">Countdown</h2>
+            <div class="countdown-grid">
+                <div class="pod"><span class="num" id="cd-days">000</span><span class="lbl">Days</span></div>
+                <div class="pod"><span class="num" id="cd-hours">00</span><span class="lbl">Hours</span></div>
+                <div class="pod"><span class="num" id="cd-mins">00</span><span class="lbl">Minutes</span></div>
+                <div class="pod"><span class="num" id="cd-secs">00</span><span class="lbl">Seconds</span></div>
+            </div>
+            <div class="lights-container">
+                <img src="assets/lights.png" alt="" data-deco class="lights-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="details">
+        <div class="wrap">
+            <h2 class="section-title script">The Details</h2>
+            <p class="section-sub">Everything you need to know</p>
+
+            <div class="details-card">
+                <img class="details-bg" src="assets/display.png" alt="Villa Montalcino Display">
+                <div class="details-overlay">
+                    <span class="script">Location</span>
+                    <h3 class="details-venue">Villa Montalcino</h3>
+                    <span class="details-time">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                        From 17:00 to 02:00
+                    </span>
+                </div>
+            </div>
+
+            <div class="details-actions">
+                <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Villa%20Montalcino" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path
+                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Google Maps
+                </a>
+                <button class="btn ghost" id="add-calendar-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M8 2v4" />
+                        <path d="M16 2v4" />
+                        <rect width="18" height="18" x="3" y="4" rx="2" />
+                        <path d="M3 10h18" />
+                    </svg>
+                    Calendar
+                </button>
+            </div>
+
+            <div class="music-divider">
+                <img src="assets/music.png" alt="" data-deco class="music-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="order-of-day">
+        <div class="wrap">
+            <h2 class="section-title script">Order of the Day</h2>
+            <p class="section-sub">What we have planned for you</p>
+            <div class="timeline">
+                <div class="t-item">
+                    <div class="t-time">17:00</div>
+                    <h3>Arrival &amp; Welcome Drinks</h3>
+                    <p>Reception and welcome cocktails at the villa</p>
+                </div>
+                <div class="t-item">
+                    <div class="t-time">18:00</div>
+                    <h3>Ceremony</h3>
+                    <p>The most special moment of the day</p>
+                </div>
+                <div class="t-item">
+                    <div class="t-time">19:00</div>
+                    <h3>Cocktail Hour &amp; Dinner</h3>
+                    <p>Al fresco dining under the stars</p>
+                </div>
+                <div class="t-item">
+                    <div class="t-time">22:00</div>
+                    <h3>Party</h3>
+                    <p>Let's dance the night away!</p>
+                </div>
+                <div class="t-item">
+                    <div class="t-time">01:30</div>
+                    <h3>Last Dance</h3>
+                    <p>Farewell and<br>beautiful memories</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dresscode">
+        <div class="wrap">
+            <h2 class="section-title script">Dress Code</h2>
+            <p class="section-sub">A few gentle reminders</p>
+            <div class="dresscode-wrap">
+                <img class="dresscode-illustration" src="assets/dress-code.png" alt="" data-deco>
+                <div class="dresscode-card">
+                    <h3>Formal Attire</h3>
+                    <p>We kindly ask you to dress formally to join us on this very special day.</p>
+                    <p class="note">Please avoid wearing white — it is reserved for the bride.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gifts">
+        <div class="wrap">
+            <div class="gifts-wrap">
+                <h2 class="section-title script">Gifts</h2>
+                <p class="section-sub">A thoughtful gesture</p>
+                <img class="envelope-img" src="assets/envelope.png" alt="" data-deco>
+                <p class="gifts-copy">Your presence is the greatest gift of all. For those who wish to give a little
+                    something, you can do so in the following ways:</p>
+
+                <div class="accordion-item" data-open="false">
+                    <button class="accordion-q">
+                        <span>Card <span class="tag">preferred</span></span>
+                        <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="accordion-a">
+                        <p>A card box will be available at the welcome table on the day — no need to bring anything in
+                            advance.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-open="false">
+                    <button class="accordion-q">
+                        <span>Bank Transfer</span>
+                        <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="accordion-a">
+                        <p>If you'd prefer to send a gift by bank transfer, please message us directly and we'll share
+                            the details.</p>
+                    </div>
+                </div>
+
+                <div class="gifts-divider" style="margin-top: 36px; text-align: center;">
+                    <img src="assets/flower.png" alt="Decorative Flower" data-deco style="max-width: 160px; margin: 0 auto; opacity: 0.9;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rsvp">
+        <div class="wrap">
+            <h2 class="section-title script">RSVP</h2>
+            <p class="rsvp-deadline">We hope you can make it</p>
+
+            <form class="rsvp-form" id="rsvp-form">
+                <div class="field">
+                    <label>Will you attend? *</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="attending" value="yes" checked>
+                            Yes, I'll be there
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="attending" value="no">
+                            Sorry, I can't make it
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="name">Full name *</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+
+                <div class="field">
+                    <label for="dietary">Allergies or dietary requirements</label>
+                    <textarea id="dietary" name="dietary" placeholder="e.g. gluten-free, lactose intolerant..." rows="3"></textarea>
+                </div>
+
+                <div class="field">
+                    <label for="phone">Contact phone *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+44 7700 900000" required>
+                </div>
+
+                <div class="field">
+                    <label>Companions</label>
+                    <p class="field-help" style="font-size: 12px; color: var(--ink-soft); margin: -4px 0 12px 0; line-height: 1.4; text-transform: none; letter-spacing: normal;">Add the people joining you and note any allergies they may have.</p>
+                    <div style="display: flex; gap: 20px;">
+                        <div style="flex: 1; display: flex; align-items: center; gap: 8px;">
+                            <label for="companions-adult" style="margin-bottom: 0; font-size: 13px; text-transform: none; letter-spacing: normal;">Adult</label>
+                            <input type="number" id="companions-adult" name="companions_adult" min="0" value="0" style="width: 70px; padding: 10px 12px;">
+                        </div>
+                        <div style="flex: 1; display: flex; align-items: center; gap: 8px;">
+                            <label for="companions-child" style="margin-bottom: 0; font-size: 13px; text-transform: none; letter-spacing: normal;">Child</label>
+                            <input type="number" id="companions-child" name="companions_child" min="0" value="0" style="width: 70px; padding: 10px 12px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field" style="display: flex; align-items: center; gap: 10px; margin-top: 24px; margin-bottom: 24px;">
+                    <input type="checkbox" id="transport" name="transport" value="yes" style="width: 20px; height: 20px; accent-color: var(--wine); margin: 0; cursor: pointer;">
+                    <label for="transport" style="margin-bottom: 0; cursor: pointer; text-transform: none; letter-spacing: normal; font-weight: normal;">I need transport to the venue</label>
+                </div>
+
+                <div class="field">
+                    <label for="accommodation">Hotel / Accommodation / Area</label>
+                    <input type="text" id="accommodation" name="accommodation" placeholder="e.g. Hotel Borgo Antico, Montalcino area...">
+                </div>
+
+                <div class="field">
+                    <label for="song">Song you'd love to hear</label>
+                    <input type="text" id="song" name="song" placeholder="e.g. Viva la Vida - Coldplay">
+                </div>
+
+                <div class="field">
+                    <label for="message">Message for the couple (optional)</label>
+                    <textarea id="message" name="message" placeholder="Write us a few words..." rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="rsvp-submit">Send RSVP</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p class="script">Elisa &amp; Jhon</p>
+        <p class="fdate">September 18, 2027</p>
+        <img class="footer-ornament" src="assets/footer.png" alt="" data-deco>
+        <p class="credit">Built with love, just for you.</p>
+    </footer>
+
+    <div id="toast" role="status" aria-live="polite"></div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" src="assets/music.mp3" loop></audio>
+
+    <!-- Floating Audio Control -->
+    <button id="music-control" class="music-toggle-btn" aria-label="Toggle background music" title="Toggle background music">
+        <!-- SVG Play Icon -->
+        <svg class="icon-play" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M8 5v14l11-7z"/>
+        </svg>
+        <!-- SVG Pause Icon -->
+        <svg class="icon-pause" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" style="display: none;">
+            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+        </svg>
+    </button>
+
+    <script>
+        (function () {
+            "use strict";
+
+            // Splash Screen Logic
+            var splashScreen = document.getElementById('splash-screen');
+            var splashVideo = document.getElementById('splash-video');
+
+            // Music playback elements
+            var bgMusic = document.getElementById('bg-music');
+            var musicControl = document.getElementById('music-control');
+            var iconPlay = musicControl ? musicControl.querySelector('.icon-play') : null;
+            var iconPause = musicControl ? musicControl.querySelector('.icon-pause') : null;
+            var isMusicPlaying = false;
+
+            function playAudio() {
+                if (bgMusic) {
+                    bgMusic.play().then(function() {
+                        isMusicPlaying = true;
+                        if (musicControl) {
+                            musicControl.classList.add('playing');
+                        }
+                        if (iconPlay && iconPause) {
+                            iconPlay.style.display = 'none';
+                            iconPause.style.display = 'block';
+                        }
+                    }).catch(function(error) {
+                        console.log("Audio playback was prevented:", error);
+                    });
+                }
+            }
+
+            function pauseAudio() {
+                if (bgMusic) {
+                    bgMusic.pause();
+                    isMusicPlaying = false;
+                    if (musicControl) {
+                        musicControl.classList.remove('playing');
+                    }
+                    if (iconPlay && iconPause) {
+                        iconPlay.style.display = 'block';
+                        iconPause.style.display = 'none';
+                    }
+                }
+            }
+
+            function toggleMusic() {
+                if (isMusicPlaying) {
+                    pauseAudio();
+                } else {
+                    playAudio();
+                }
+            }
+
+            if (musicControl) {
+                musicControl.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    toggleMusic();
+                });
+            }
+
+            function exitSplash() {
+                if (splashVideo) {
+                    splashVideo.pause();
+                }
+                if (splashScreen) {
+                    splashScreen.classList.add('fade-out');
+                    setTimeout(function() {
+                        splashScreen.style.display = 'none';
+                    }, 800);
+                }
+                // Autoplay background music after splash interaction
+                playAudio();
+            }
+
+            if (splashScreen && splashVideo) {
+                // Clicking splash screen plays video on first click, exits on second click
+                splashScreen.addEventListener('click', function() {
+                    if (splashVideo.paused) {
+                        var playPromise = splashVideo.play();
+                        if (playPromise !== undefined) {
+                            playPromise.catch(function(error) {
+                                console.log("Video playback blocked:", error);
+                                exitSplash();
+                            });
+                        }
+                    } else {
+                        exitSplash();
+                    }
+                });
+
+                // Smoothly fade in the video once it is playing (prevents visual loading flash)
+                splashVideo.addEventListener('playing', function() {
+                    splashVideo.classList.add('visible');
+                });
+
+                // Exit splash screen when video ends
+                splashVideo.addEventListener('ended', function() {
+                    exitSplash();
+                });
+            } else if (splashScreen) {
+                splashScreen.style.display = 'none';
+            }
+
+            document.querySelectorAll('img[data-deco]').forEach(function (img) {
+                img.addEventListener('error', function () { img.style.display = 'none'; });
+            });
+
+            var WEDDING_DATE = new Date('2027-09-18T17:00:00');
+
+            function updateCountdown() {
+                var now = new Date();
+                var diff = WEDDING_DATE - now;
+                if (diff < 0) diff = 0;
+
+                var d = Math.floor(diff / (1000 * 60 * 60 * 24));
+                var h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+                var m = Math.floor((diff / (1000 * 60)) % 60);
+                var s = Math.floor((diff / 1000) % 60);
+
+                document.getElementById('cd-days').textContent = String(d).padStart(3, '0');
+                document.getElementById('cd-hours').textContent = String(h).padStart(2, '0');
+                document.getElementById('cd-mins').textContent = String(m).padStart(2, '0');
+                document.getElementById('cd-secs').textContent = String(s).padStart(2, '0');
+            }
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+
+            document.getElementById('add-calendar-btn').addEventListener('click', function () {
+                var start = '20270918T170000';
+                var end = '20270919T020000';
+                var ics = [
+                    'BEGIN:VCALENDAR',
+                    'VERSION:2.0',
+                    'BEGIN:VEVENT',
+                    "SUMMARY:Elisa & Jhon's Wedding",
+                    'LOCATION:Villa Montalcino',
+                    'DTSTART:' + start,
+                    'DTEND:' + end,
+                    "DESCRIPTION:We can't wait to celebrate with you!",
+                    'END:VEVENT',
+                    'END:VCALENDAR'
+                ].join('\r\n');
+                var blob = new Blob([ics], { type: 'text/calendar' });
+                var url = URL.createObjectURL(blob);
+                var a = document.createElement('a');
+                a.href = url;
+                a.download = 'elisa-and-jhon-wedding.ics';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            });
+
+            document.querySelectorAll('.accordion-item').forEach(function (item) {
+                var btn = item.querySelector('.accordion-q');
+                var answer = item.querySelector('.accordion-a');
+                btn.addEventListener('click', function () {
+                    var isOpen = item.getAttribute('data-open') === 'true';
+                    item.setAttribute('data-open', isOpen ? 'false' : 'true');
+                    answer.style.maxHeight = isOpen ? null : answer.scrollHeight + 'px';
+                    btn.setAttribute('aria-expanded', String(!isOpen));
+                });
+                btn.setAttribute('aria-expanded', 'false');
+            });
+
+            var toastEl = document.getElementById('toast');
+            var toastTimer;
+            function showToast(message) {
+                toastEl.textContent = message;
+                toastEl.classList.add('show');
+                clearTimeout(toastTimer);
+                toastTimer = setTimeout(function () { toastEl.classList.remove('show'); }, 3200);
+            }
+
+            var form = document.getElementById('rsvp-form');
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var name = document.getElementById('name').value.trim();
+                if (!name) {
+                    showToast('Please enter your name.');
+                    return;
+                }
+                var attending = form.querySelector('input[name="attending"]:checked').value;
+                showToast(attending === 'yes'
+                    ? 'Thank you, ' + name + ' — we can\'t wait to celebrate with you!'
+                    : 'Thank you, ' + name + ' — you\'ll be missed!');
+                form.reset();
+            });
+
+        })();
+    </script>
+    <script src="/demos/invitation-engine.js"></script>
+</body>
+
+</html>
