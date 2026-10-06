@@ -17,7 +17,7 @@ export function middleware(request: NextRequest) {
     subdomain = hostname.substring(0, hostname.length - ".localhost".length);
   }
 
-  const systemSubdomains = ["www", "api", "admin", "checkout", "dashboard", "mail", "support"];
+  const systemSubdomains = ["www", "api", "admin", "checkout", "dashboard", "templates", "mail", "support"];
 
   if (subdomain && !systemSubdomains.includes(subdomain.toLowerCase())) {
     const targetPath = `/invite/${subdomain}${pathname === "/" ? "" : pathname}`;
@@ -31,7 +31,9 @@ export function middleware(request: NextRequest) {
     "/",
     "/login",
     "/checkout",
+    "/dashboard",
     "/design",
+    "/templates",
     "/pricing",
     "/reviews",
     "/privacy-policy",
