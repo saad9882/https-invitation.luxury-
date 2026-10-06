@@ -44,3 +44,10 @@ next-env.d.ts
 package-lock.json
 pnpm-lock.yaml
 yarn.lock
+# Ignore nested repositories
+https-invitation.luxury-/
+luxury-invitation-/
+
+# Ignore nested repositories
+https-invitation.luxury-/
+luxury-invitation/
